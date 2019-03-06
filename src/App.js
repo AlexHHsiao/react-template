@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import apiService from './common/services/ApiService';
+import Headers from './component/Header/Header';
+import Login from "./component/Authentication/Login/Login";
 
 class App extends Component {
     click = () => {
@@ -13,7 +15,9 @@ class App extends Component {
 
     render() {
         return (
-            <button className='btn btn-danger' onClick={this.click}>Testing</button>
+
+
+           <Headers />
         );
     }
 }
